@@ -1,0 +1,41 @@
+[
+  {
+    "id": "668765",
+    "surname": "Пушкин",
+    "name": "Александр",
+    "patronymic": "Сергееви",
+    "phone": "+7 (000) 000 - 00 - 00",
+    "isFavorite": true
+  },
+  {
+    "id": "685726",
+    "surname": "Тютчев",
+    "name": "Федор",
+    "patronymic": "Иванович",
+    "phone": "+7 (000) 000 - 00 - 00",
+    "isFavorite": false
+  },
+  {
+    "id": "806906",
+    "surname": "Державин",
+    "name": "Гавриил",
+    "patronymic": "Романович",
+    "phone": "+7 (000) 000 - 00 - 00",
+    "isFavorite": false
+  },
+  {
+    "id": "14628",
+    "surname": "Сумароков",
+    "name": "Александр",
+    "patronymic": "Петрович",
+    "phone": "+7 (000) 000 - 00 - 00",
+    "isFavorite": true
+  },
+  {
+    "id": "756492",
+    "surname": "Прокопович",
+    "name": "Феофан",
+    "phone": "+7 (000) 000 - 00 - 00",
+    "isFavorite": false
+  }
+]

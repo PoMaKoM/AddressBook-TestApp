@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  phoneMask: '+7 (___) ___ - __ - __'
 };
