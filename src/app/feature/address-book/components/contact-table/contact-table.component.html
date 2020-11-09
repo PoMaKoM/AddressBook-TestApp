@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th *ngFor="let columnTitle of tableHead">{{columnTitle}}</th>
+  </tr>
+  <tr *ngFor="let contact of (contacts | sortContacts)">
+    <td class="icon" *ngIf="contact?.isFavorite" (click)="setFavoriteStatus(contact.id, false)"> &#11088;</td>
+    <td class="icon" *ngIf="!contact?.isFavorite" (click)="setFavoriteStatus(contact.id, true)"> &#9734;</td>
+    <td>{{contact?.surname}}</td>
+    <td>{{contact?.name}}</td>
+    <td>{{contact?.patronymic}}</td>
+    <td>{{contact?.phone}}</td>
+    <td class="icon" (click)="deleteContact(contact.id)">&#10060;</td>
+  </tr>
+</table>
