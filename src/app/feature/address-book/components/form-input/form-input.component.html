@@ -1,0 +1,38 @@
+<form [formGroup]="contactAddForm" (ngSubmit)="onSubmit()">
+  <div class="input-wrapper">
+    <label for="surname">{{surnameLabel}}</label>
+    <input formControlName="surname"
+           id="surname"
+           type="text"/>
+    <span *ngIf="contactAddForm.controls.surname?.invalid">{{requiredField}}</span>
+  </div>
+
+  <div class="input-wrapper">
+    <label for="name">{{nameLabel}}</label>
+    <input formControlName="name"
+           id="name"
+           type="text"/>
+  </div>
+
+  <div class="input-wrapper">
+    <label for="patronymic">{{patronymicLabel}}</label>
+    <input formControlName="patronymic"
+           id="patronymic"
+           type="text"/>
+  </div>
+
+  <div class="input-wrapper">
+    <label for="phone">{{phoneLabel}}</label>
+    <input formControlName="phone"
+           id="phone"
+           type="text"
+           [maxlength]="phoneMask.length"
+           appPhoneMask
+           [placeholder]="phoneMask"
+           [phoneMask]="phoneMask"/>
+    <span *ngIf="contactAddForm.controls.phone?.getError('empty')">{{requiredField}}</span>
+    <span *ngIf="contactAddForm.controls.phone?.getError('incorrect')">{{incorrectField}}</span>
+  </div>
+
+  <button class="btn" type="submit">+</button>
+</form>

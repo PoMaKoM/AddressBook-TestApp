@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+// normalize css file
+@import url('assets/normalize.min.css');
+
+// fount Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+
+  // Variables CSS
+  --white: #ffffff;
+  --black: #000000;
+  --gray-primary: #dbe0e4;
+  --green-primary: #28a745;
+  --blue-primary: #15cee3;
+  --red-primary: #ec0f0f;
+}
+
