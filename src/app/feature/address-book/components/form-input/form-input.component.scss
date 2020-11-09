@@ -1,0 +1,77 @@
+:host {
+  max-width: 1200px;
+  width: 100%;
+  display: block;
+  padding: 25px 0;
+  position: fixed;
+  background-color: var(--white);
+  box-shadow: 0 2px 6px 2px var(--white);
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .input-wrapper input.ng-invalid {
+      border: 1px solid var(--red-primary);
+    }
+
+    .input-wrapper {
+      width: calc(25% - 30px);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      label {
+        font-size: 15px;
+        line-height: 16px;
+        padding: 2px 5px;
+      }
+
+      input {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 15px;
+        box-sizing: border-box;
+        border: 1px solid var(--gray-primary);
+        outline: none;
+
+        &:focus, :hover, :focus {
+          border: 1px solid var(--blue-primary);
+        }
+      }
+
+      span {
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: bold;
+        padding: 5px;
+        color: var(--white);
+        border-radius: 5px 0 5px 5px;
+        background-color: var(--red-primary);
+      }
+    }
+
+    button {
+      height: 30px;
+      width: 30px;
+      font-size: 15px;
+      line-height: 15px;
+      padding: 5px;
+      color: var(--white);
+      background-color: var(--green-primary);
+      border-radius: 5px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+
+      &:focus, :hover, :focus {
+        border: 0;
+      }
+    }
+  }
+}
